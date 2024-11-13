@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+/*Estilo mobile first*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+body,html{
+        scroll-behavior: smooth;/*rolagem devagar*/
+}
+header{
+    background-image: linear-gradient(to top, var(--cor3) , var(--cor5));
+}
+header h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-variant: small-caps;
+    font-size: 5.0em;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+header p{
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 25px;
+    color: white;
+    font-weight: bold;
+    
+}
+span#burguer{
+    background-color: var(--cor4);
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+span#burguer:hover{
+    background-color: var(--cor2);
+    color: black;
+    cursor: pointer;
+}
+menu{
+    display:none;
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+menu>ul{
+    list-style-type: none;
+}
+menu > ul >li >a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.562);
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+menu > ul > li > a:hover{
+    background-color: rgba(255, 255, 255, 0.452);
+}
+main{
+    width: 75vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.473);
+    margin-bottom: 20px;
+}
+main h2{
+    text-align: center;
+    width: 80vw;
+    font-size: 1em;
+}
+main p{
+    font-size: 0.8em;
+}
+article h2{
+    padding-bottom: 15px;
+    color: var(--cor5);
+    font-size: 1.3em;
+}
+article p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+section#noticias {
+    position: relative;
+}
+h2.transp{
+    height: 15px;
+    padding: 15px;
+    font-size: 1em;
+    background-image: linear-gradient(to right,var(--cor2),transparent);
+    margin-bottom: 20px;
+}
+section#noticias img{
+    width: 35vw;
+    height: 100px;
+    padding-left: 20px;
+}
+img#baseball{
+    margin-top: 20px;
+}
+img#ciclismo{
+    margin-top: 20px;
+}
+img#natacao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img#corrida{
+
+}
+p.jogosp{
+
+    display: inline-block;
+    padding-left: 10px;
+}
+/*Diminuição da fonte de cada parágrafo*/
+p#jogo{
+    font-size: 0.5em;
+    font-weight: bolder;
+    text-align: justify;
+    width: 35vw;
+    position: absolute;
+    top: 75px;
+}
+p#baseball{
+    font-size: 0.5em;
+    font-weight: bolder;
+    text-align: justify;
+    width: 35vw;
+    position: absolute;
+    top: 195px;
+}
+p#ciclismo{
+    font-size: 0.5em;
+    font-weight: bolder;
+    text-align: justify;
+    width: 35vw;
+    position: absolute;
+    top: 310px;
+}
+p#natacao{
+    font-size: 0.5em;
+    position: absolute;
+    font-weight: bolder;
+    bottom: 192px;
+    text-align: justify;
+    width: 35vw;
+}
+p#corrida{
+    font-size: 0.5em;
+    position: absolute;
+    font-weight: bolder;
+    bottom: 10px;
+    text-align: justify;
+    width: 45vw;
+}
+/*Rodapé*/
+footer{
+    background-color: var(--cor5);
+    height: 150px;
+}
+footer p{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+a#Criadores{
+    font-size: 1.3em;
+    text-decoration: none;
+    font-variant: small-caps;
+}
